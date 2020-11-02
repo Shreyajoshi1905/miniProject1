@@ -1,0 +1,2 @@
+(this.webpackJsonpfoodrecipe=this.webpackJsonpfoodrecipe||[]).push([[0],{3:function(e,o,n){e.exports=n(4)},4:function(e,o,n){"use strict";n.r(o);var t=n(0),r=n.n(t),c=n(2),a=n.n(c),i=(n(9),new Date),l="",s={};(i=i.getHours())>=1&&i<12?(l="Good Morning",s.color="green"):i>=12&&i<=19?(l="Good Evening",s.color="orange"):i>19&&i<=23&&(l="good night",s.color="black"),a.a.render(r.a.createElement("h1",null,"hello sir/maam ,",r.a.createElement("span",{style:s},l)," "),document.getElementById("root"))},9:function(e,o,n){}},[[3,1,2]]]);
+//# sourceMappingURL=main.0c8955d0.chunk.js.map
