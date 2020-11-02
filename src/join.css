@@ -1,0 +1,23 @@
+.join{
+    background-color: black;
+
+
+}
+
+.join h1{
+    color: palevioletred;
+    font-size: 600%;
+    margin: auto;
+    text-align: center;
+
+    
+}
+.join input {
+    margin-top: 10cm;
+    width: 80%;
+    padding: 15px 22px;
+    margin: 10px 5px;
+    box-sizing: border-box;  
+    margin-right: 20%;
+    outline: none;
+}
