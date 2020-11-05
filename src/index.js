@@ -2,30 +2,40 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import "./index.css";
-let curDate = new Date();
-curDate = curDate.getHours();
-let greeting = "";
-const cssStyle = {}
 
-if( curDate >= 1 && curDate < 12)
-{
-    greeting = "Good Morning"
-    cssStyle.color = "green"
-}
-else if(curDate>=12 && curDate <= 19)
-{
-    greeting = "Good Evening"
-    cssStyle.color = "orange"
-}
-
-else if(curDate > 19 && curDate<=23 )
-{
-    greeting = "good night"
-    cssStyle.color = "black"
-}
+import Card from "./Card";
+import Header from "./Header";
+import Sdata from "./Sdata"
 
 
 ReactDOM.render(
-    <h1>hello sir/maam ,<span style = {cssStyle}>{greeting}</span> </h1>,
+    <div className = "row">
+    <Header/>
+     <Card className = "col-lg-3" 
+      imgsrc = {Sdata[0].imgsrc}
+      title = {Sdata[0].title}
+      goto = {Sdata[0].goto}
+      
+      />
+     <Card className = "col-lg-3" 
+     imgsrc = {Sdata[1].imgsrc}
+     title = {Sdata[1].title}
+     goto = {Sdata[1].goto}
+     />
+     <Card className = "col-lg-3" 
+     imgsrc = {Sdata[2].imgsrc}
+     title = {Sdata[2].title}
+     goto = {Sdata[2].goto}
+     
+     />
+     <Card  className = "col-lg-3" 
+     imgsrc = {Sdata[3].imgsrc}
+     title = {Sdata[3].title}
+     goto = {Sdata[3].goto}
+     
+     />
+     
+    </div>,
     document.getElementById("root")
-);
+)
+    
